@@ -1,4 +1,4 @@
-package com.example.JasonShaw;
+package com.example.JasonShaw.Test;
 
 import lombok.AccessLevel;
 import lombok.Getter;

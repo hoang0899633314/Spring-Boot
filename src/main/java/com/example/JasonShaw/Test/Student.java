@@ -1,4 +1,4 @@
-package com.example.JasonShaw;
+package com.example.JasonShaw.Test;
 
 public class Student {
     private int id;
