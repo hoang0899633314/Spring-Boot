@@ -19,30 +19,32 @@ public class EmployeeController {
 
     // Khởi tạo dữ liệu mẫu
     public EmployeeController() {
-        employees.add(new Employee(
-                nextId++,
-                "Nguyen Van A",
-                "1990-05-15",
-                Gender.MALE,
-                15000000.0,
-                "0901234567"
-        ));
-        employees.add(new Employee(
-                nextId++,
-                "Tran Thi B",
-                "1995-08-20",
-                Gender.FEMALE,
-                18000000.0,
-                "0912345678"
-        ));
-        employees.add(new Employee(
-                nextId++,
-                "Le Van C",
-                "1988-12-10",
-                Gender.MALE,
-                20000000.0,
-                "0923456789"
-        ));
+        employees.add(Employee.builder()
+                .id(nextId++)
+                .name("Nguyen Van A")
+                .dob("1990-05-15")
+                .gender(Gender.MALE)
+                .salary(15000000.0)
+                .phone("0901234567")
+                .build());
+
+        employees.add(Employee.builder()
+                .id(nextId++)
+                .name("Tran Thi B")
+                .dob("1995-08-20")
+                .gender(Gender.FEMALE)
+                .salary(18000000.0)
+                .phone("0912345678")
+                .build());
+
+        employees.add(Employee.builder()
+                .id(nextId++)
+                .name("Le Van C")
+                .dob("1988-12-10")
+                .gender(Gender.MALE)
+                .salary(20000000.0)
+                .phone("0923456789")
+                .build());
     }
 
     // 1. GET /employees - Lấy tất cả nhân viên
