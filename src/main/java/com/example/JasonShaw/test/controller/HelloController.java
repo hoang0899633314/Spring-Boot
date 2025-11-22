@@ -1,4 +1,4 @@
-package com.example.JasonShaw.Test;
+package com.example.JasonShaw.test.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

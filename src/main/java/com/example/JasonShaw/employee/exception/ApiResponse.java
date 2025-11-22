@@ -1,4 +1,4 @@
-package com.example.JasonShaw.employee;
+package com.example.JasonShaw.employee.exception;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;

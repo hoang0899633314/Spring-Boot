@@ -1,4 +1,4 @@
-package com.example.JasonShaw.Test;
+package com.example.JasonShaw.test;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

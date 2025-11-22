@@ -1,4 +1,4 @@
-package com.example.JasonShaw.employee;
+package com.example.JasonShaw.employee.model;
 
 public enum Gender {
     MALE,

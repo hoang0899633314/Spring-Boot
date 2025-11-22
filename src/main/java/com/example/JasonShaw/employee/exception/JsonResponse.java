@@ -1,4 +1,4 @@
-package com.example.JasonShaw.employee;
+package com.example.JasonShaw.employee.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

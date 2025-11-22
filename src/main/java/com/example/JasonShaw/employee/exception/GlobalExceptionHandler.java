@@ -1,6 +1,5 @@
-package com.example.JasonShaw.employee;
+package com.example.JasonShaw.employee.exception;
 
-import com.example.JasonShaw.employee.ApiResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -8,8 +7,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(AppException.class)
-    public ResponseEntity<ApiResponse<Void>> handleAppException(AppException e) {
+    @ExceptionHandler(ApiException.class)
+    public ResponseEntity<ApiResponse<Void>> handleAppException(ApiException e) {
         ErrorCode errorCode = e.getErrorCode();
 
         ApiResponse<Void> response = ApiResponse.<Void>builder()

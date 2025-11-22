@@ -1,9 +1,12 @@
-package com.example.JasonShaw.Test;
+package com.example.JasonShaw.test.model;
 
+import lombok.Builder;
+
+@Builder
 public class Student {
     private int id;
     private String name;
-    private double scroe;
+    private double score;
 
     public Student() {
     }
@@ -11,7 +14,7 @@ public class Student {
     public Student(int id, String name, double score) {
         this.id = id;
         this.name = name;
-        this.scroe = score;
+        this.score  = score;
     }
 
     public int getId() {
@@ -31,10 +34,10 @@ public class Student {
     }
 
     public double getScore() {
-        return scroe;
+        return score;
     }
 
     public void setScore(double scroe) {
-        this.scroe = scroe;
+        this.score = scroe;
     }
 }

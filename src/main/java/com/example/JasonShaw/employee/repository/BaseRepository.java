@@ -1,0 +1,30 @@
+package com.example.JasonShaw.employee.repository;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+@Component
+public class BaseRepository {
+
+    @Value("${spring.datasource.url}")
+    private String jdbcUrl;
+
+    @Value("${spring.datasource.username}")
+    private String username;
+
+    @Value("${spring.datasource.password}")
+    private String password;
+
+    public Connection getConnection() throws SQLException {
+        return DriverManager.getConnection(jdbcUrl, username, password);
+    }
+
+    public void closeConnection(Connection connection) {
+        try {
+            if (connection != null) connection.close();
+        } catch (SQLException ignored) {}
+    }
+}
